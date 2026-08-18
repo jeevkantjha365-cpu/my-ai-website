@@ -25,7 +25,7 @@ app.post("/api/chat", async (req, res) => {
 
     try {
         const response = await client.responses.create({
-            model: "llama-3.3-70b-versatile",
+            model: "groq/compound-mini",
             input: message
         });
 
